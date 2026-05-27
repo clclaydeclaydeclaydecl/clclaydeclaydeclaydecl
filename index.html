@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clayde loyola</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            background: url('background.jpg') center/cover no-repeat;
+            font-family: 'Times New Roman', Times, serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 40px 20px;
+        }
+
+        .name {
+            font-size: clamp(2rem, 8vw, 6rem);
+            color: #000;
+            margin-bottom: 20px;
+        }
+
+        .email {
+            font-size: clamp(1rem, 3vw, 2rem);
+            color: #000;
+            margin-bottom: 60px;
+        }
+
+        .photo {
+            width: clamp(200px, 40vw, 400px);
+            aspect-ratio: 3/4;
+            object-fit: cover;
+            border: 2px solid #000;
+            box-shadow: 8px 8px 0 #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="name">clayde loyola</div>
+    <div class="email">2009.claydeloyola@gmail.com</div>
+    <img src="motherland.jpg" alt="" class="photo">
+</body>
+</html>
