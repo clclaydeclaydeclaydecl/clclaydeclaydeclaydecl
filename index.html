@@ -46,7 +46,6 @@
       flex-shrink: 0;
       width: 220px;
       position: relative;
-      /* Prevent interaction with the image */
       user-select: none;
       -webkit-user-select: none;
       -moz-user-select: none;
@@ -58,7 +57,6 @@
       position: absolute;
       inset: 0;
       z-index: 2;
-      /* Invisible overlay that blocks all pointer events */
       pointer-events: auto;
     }
 
@@ -67,7 +65,6 @@
       height: 280px;
       object-fit: cover;
       display: block;
-      /* Extra protection */
       pointer-events: none;
       -webkit-user-drag: none;
       user-drag: none;
@@ -114,7 +111,6 @@
       color: #000000;
     }
 
-    /* Mobile */
     @media (max-width: 640px) {
       h1 {
         font-size: 2rem;
@@ -143,9 +139,8 @@
 
     <div class="content">
       <div class="photo-wrap">
-        <!-- Protected image: cannot be dragged, right-clicked, or opened in new tab easily -->
         <img
-          src="image.PNG"
+          src="https://i.postimg.cc/SYR3Fqfp/image.png"
           alt=""
           class="photo"
           draggable="false"
@@ -162,20 +157,19 @@
           Interested in pharmaceuticals, pharmacology, dentistry, biology, self medication, stimulants, mental health, learning languages, chemistry, physics, life, safer drug use, chemical engineering, conspiracies, writing, chemical / generalized research, religions, consciousness, public speaking, et al.
         </p>
         <p>
-          Will mail back on sent mails as soon as i can, godspeeeeeeed! also open for projects, questions, and pretty much everything that you wish for.
+          will peace be upon you.
         </p>
 
         <div class="links">
-          <span class="email">2009claydeloyola@gmail.com</span>
+          <span class="email">2009.claydeloyola@gmail.com</span>
           <a href="https://github.com/clclaydeclaydeclaydecl">GitHub</a>
-          <a href="#" onclick="alert('Kindly mail me through my gmail account (loyolaclayde911@gmail.com) for my personal resume. Thank you!'); return false;">CV</a>
+          <a href="#" onclick="alert('Kindly mail me through my gmail account (2009.claydeloyola@gmail.com) for my personal resume.'); return false;">CV</a>
         </div>
       </div>
     </div>
   </div>
 
   <script>
-    // Extra client-side protection against common image-saving techniques
     document.addEventListener('contextmenu', function(e) {
       if (e.target.tagName === 'IMG' || e.target.closest('.photo-wrap')) {
         e.preventDefault();
@@ -190,10 +184,8 @@
       }
     });
 
-    // Block keyboard shortcuts that might open image (limited effectiveness)
     document.addEventListener('keydown', function(e) {
       if ((e.ctrlKey || e.metaKey) && (e.key === 's' || e.key === 'S')) {
-        // optional: prevent page save, but usually left alone
       }
     });
   </script>
